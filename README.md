@@ -1,6 +1,6 @@
 # Cpp-MPC
 
-This folder contains some initial C++ projects built using Xcode
+This folder contains some initial C++ projects built using Xcode in MacOS.
 
 <h2> Required Libraries/packages </h2>
 
