@@ -17,11 +17,11 @@ This folder contains some initial C++ projects built using Xcode in MacOS.
 
 <h2> Projects </h2>
 <ul>
-  <li>exampleNonlinearProgramming: Solves a constrained optimization problem according to the CppAD documentation.</li>
+  <li> <b>exampleNonlinearProgramming </b>: Solves a constrained optimization problem according to the CppAD documentation.</li>
  
-  <li>doubleIntegratorMPCclasses: Solves the OCP for the double integrator in a receding horizon fashion to obtain the closed-loop solution. All of the MPC-related code is condensed into a single class called MPC.</li>
+  <li> <b>doubleIntegratorMPCclasses </b>: Solves the OCP for the double integrator in a receding horizon fashion to obtain the closed-loop solution. All of the MPC-related code is condensed into a single class called MPC.</li>
   
-  <li>oldCode: Contains older Xcode projects that have been changed incrementally to produce the current versions. </br>
+  <li> <b>oldCode </b>: Contains older Xcode projects that have been changed incrementally to produce the current versions. </br>
   doubleIntegratorOCP: Builds and solves the optimal control problem for a double integrator case study to obtain the open-loop solution. </br>
   doubleIntegratorMPC: Solves the OCP for the double integrator in a receding horizon fashion to obtain the closed-loop solution.</li>
 </ul> 
