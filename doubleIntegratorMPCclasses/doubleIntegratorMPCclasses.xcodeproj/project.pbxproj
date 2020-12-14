@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60EC2EDB258461E3001DA7C3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2EDA258461E3001DA7C3 /* main.cpp */; };
+		60EC2EE4258461F4001DA7C3 /* FG_eval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2EE2258461F4001DA7C3 /* FG_eval.cpp */; };
+		60EC2EF52584630E001DA7C3 /* libcppad_lib.340.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EC2EF42584630E001DA7C3 /* libcppad_lib.340.3.dylib */; };
+		60EC2EF62584630E001DA7C3 /* libcppad_lib.340.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 60EC2EF42584630E001DA7C3 /* libcppad_lib.340.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		60EC2EFF25846322001DA7C3 /* libmpiseq.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EC2EF825846322001DA7C3 /* libmpiseq.dylib */; };
+		60EC2F0025846322001DA7C3 /* libmpiseq.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 60EC2EF825846322001DA7C3 /* libmpiseq.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		60EC2F0125846322001DA7C3 /* libipoptamplinterface.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EC2EF925846322001DA7C3 /* libipoptamplinterface.3.dylib */; };
+		60EC2F0225846322001DA7C3 /* libipoptamplinterface.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 60EC2EF925846322001DA7C3 /* libipoptamplinterface.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		60EC2F0325846322001DA7C3 /* libpord.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EC2EFA25846322001DA7C3 /* libpord.dylib */; };
+		60EC2F0425846322001DA7C3 /* libpord.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 60EC2EFA25846322001DA7C3 /* libpord.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		60EC2F0525846322001DA7C3 /* libipopt.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EC2EFB25846322001DA7C3 /* libipopt.3.dylib */; };
+		60EC2F0625846322001DA7C3 /* libipopt.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 60EC2EFB25846322001DA7C3 /* libipopt.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		60EC2F0725846322001DA7C3 /* libmumps_common.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EC2EFC25846322001DA7C3 /* libmumps_common.dylib */; };
+		60EC2F0825846322001DA7C3 /* libmumps_common.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 60EC2EFC25846322001DA7C3 /* libmumps_common.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		60EC2F0925846322001DA7C3 /* libsipopt.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EC2EFD25846322001DA7C3 /* libsipopt.3.dylib */; };
+		60EC2F0A25846322001DA7C3 /* libsipopt.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 60EC2EFD25846322001DA7C3 /* libsipopt.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		60EC2F0B25846322001DA7C3 /* libdmumps.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EC2EFE25846322001DA7C3 /* libdmumps.dylib */; };
+		60EC2F0C25846322001DA7C3 /* libdmumps.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 60EC2EFE25846322001DA7C3 /* libdmumps.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		60EC2F1D25854A99001DA7C3 /* supportLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2F1A25854A99001DA7C3 /* supportLib.cpp */; };
+		60EC2F1E25854A99001DA7C3 /* pbPlots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2F1C25854A99001DA7C3 /* pbPlots.cpp */; };
+		60EC2F212585A90B001DA7C3 /* MPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2F1F2585A90B001DA7C3 /* MPC.cpp */; };
+		60EC2F242585B7A1001DA7C3 /* Params.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2F222585B7A1001DA7C3 /* Params.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60EC2ED5258461E3001DA7C3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		60EC2EF72584630E001DA7C3 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60EC2F0A25846322001DA7C3 /* libsipopt.3.dylib in Embed Libraries */,
+				60EC2F0825846322001DA7C3 /* libmumps_common.dylib in Embed Libraries */,
+				60EC2F0625846322001DA7C3 /* libipopt.3.dylib in Embed Libraries */,
+				60EC2F0225846322001DA7C3 /* libipoptamplinterface.3.dylib in Embed Libraries */,
+				60EC2EF62584630E001DA7C3 /* libcppad_lib.340.3.dylib in Embed Libraries */,
+				60EC2F0025846322001DA7C3 /* libmpiseq.dylib in Embed Libraries */,
+				60EC2F0C25846322001DA7C3 /* libdmumps.dylib in Embed Libraries */,
+				60EC2F0425846322001DA7C3 /* libpord.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		60EC2ED7258461E3001DA7C3 /* doubleIntegratorMPCclasses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = doubleIntegratorMPCclasses; sourceTree = BUILT_PRODUCTS_DIR; };
+		60EC2EDA258461E3001DA7C3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		60EC2EE2258461F4001DA7C3 /* FG_eval.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FG_eval.cpp; sourceTree = "<group>"; };
+		60EC2EE3258461F4001DA7C3 /* FG_eval.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FG_eval.hpp; sourceTree = "<group>"; };
+		60EC2EF42584630E001DA7C3 /* libcppad_lib.340.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcppad_lib.340.3.dylib; path = ../../../../../../../usr/local/Cellar/cppad/20200000.3/lib/libcppad_lib.340.3.dylib; sourceTree = "<group>"; };
+		60EC2EF825846322001DA7C3 /* libmpiseq.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmpiseq.dylib; path = ../../../../../../../usr/local/Cellar/ipopt/3.13.3_2/lib/libmpiseq.dylib; sourceTree = "<group>"; };
+		60EC2EF925846322001DA7C3 /* libipoptamplinterface.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libipoptamplinterface.3.dylib; path = ../../../../../../../usr/local/Cellar/ipopt/3.13.3_2/lib/libipoptamplinterface.3.dylib; sourceTree = "<group>"; };
+		60EC2EFA25846322001DA7C3 /* libpord.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpord.dylib; path = ../../../../../../../usr/local/Cellar/ipopt/3.13.3_2/lib/libpord.dylib; sourceTree = "<group>"; };
+		60EC2EFB25846322001DA7C3 /* libipopt.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libipopt.3.dylib; path = ../../../../../../../usr/local/Cellar/ipopt/3.13.3_2/lib/libipopt.3.dylib; sourceTree = "<group>"; };
+		60EC2EFC25846322001DA7C3 /* libmumps_common.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmumps_common.dylib; path = ../../../../../../../usr/local/Cellar/ipopt/3.13.3_2/lib/libmumps_common.dylib; sourceTree = "<group>"; };
+		60EC2EFD25846322001DA7C3 /* libsipopt.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsipopt.3.dylib; path = ../../../../../../../usr/local/Cellar/ipopt/3.13.3_2/lib/libsipopt.3.dylib; sourceTree = "<group>"; };
+		60EC2EFE25846322001DA7C3 /* libdmumps.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdmumps.dylib; path = ../../../../../../../usr/local/Cellar/ipopt/3.13.3_2/lib/libdmumps.dylib; sourceTree = "<group>"; };
+		60EC2F0D258466C2001DA7C3 /* libmatplot.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmatplot.dylib; path = ../../../../../../../usr/local/Cellar/matplotplusplus/1.0.1/lib/libmatplot.dylib; sourceTree = "<group>"; };
+		60EC2F1925854A99001DA7C3 /* pbPlots.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = pbPlots.hpp; path = "../../Cpp-Libraries/pbPlots/Cpp/pbPlots.hpp"; sourceTree = "<group>"; };
+		60EC2F1A25854A99001DA7C3 /* supportLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = supportLib.cpp; path = "../../Cpp-Libraries/pbPlots/Cpp/supportLib.cpp"; sourceTree = "<group>"; };
+		60EC2F1B25854A99001DA7C3 /* supportLib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = supportLib.hpp; path = "../../Cpp-Libraries/pbPlots/Cpp/supportLib.hpp"; sourceTree = "<group>"; };
+		60EC2F1C25854A99001DA7C3 /* pbPlots.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pbPlots.cpp; path = "../../Cpp-Libraries/pbPlots/Cpp/pbPlots.cpp"; sourceTree = "<group>"; };
+		60EC2F1F2585A90B001DA7C3 /* MPC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MPC.cpp; sourceTree = "<group>"; };
+		60EC2F202585A90B001DA7C3 /* MPC.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MPC.hpp; sourceTree = "<group>"; };
+		60EC2F222585B7A1001DA7C3 /* Params.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Params.cpp; sourceTree = "<group>"; };
+		60EC2F232585B7A1001DA7C3 /* Params.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Params.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60EC2ED4258461E3001DA7C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60EC2F0925846322001DA7C3 /* libsipopt.3.dylib in Frameworks */,
+				60EC2F0725846322001DA7C3 /* libmumps_common.dylib in Frameworks */,
+				60EC2F0525846322001DA7C3 /* libipopt.3.dylib in Frameworks */,
+				60EC2F0125846322001DA7C3 /* libipoptamplinterface.3.dylib in Frameworks */,
+				60EC2EF52584630E001DA7C3 /* libcppad_lib.340.3.dylib in Frameworks */,
+				60EC2EFF25846322001DA7C3 /* libmpiseq.dylib in Frameworks */,
+				60EC2F0B25846322001DA7C3 /* libdmumps.dylib in Frameworks */,
+				60EC2F0325846322001DA7C3 /* libpord.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60EC2ECE258461E3001DA7C3 = {
+			isa = PBXGroup;
+			children = (
+				60EC2ED9258461E3001DA7C3 /* doubleIntegratorMPCclasses */,
+				60EC2ED8258461E3001DA7C3 /* Products */,
+				60EC2EF32584630E001DA7C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		60EC2ED8258461E3001DA7C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60EC2ED7258461E3001DA7C3 /* doubleIntegratorMPCclasses */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60EC2ED9258461E3001DA7C3 /* doubleIntegratorMPCclasses */ = {
+			isa = PBXGroup;
+			children = (
+				60EC2EDA258461E3001DA7C3 /* main.cpp */,
+				60EC2F222585B7A1001DA7C3 /* Params.cpp */,
+				60EC2F232585B7A1001DA7C3 /* Params.hpp */,
+				60EC2EE2258461F4001DA7C3 /* FG_eval.cpp */,
+				60EC2EE3258461F4001DA7C3 /* FG_eval.hpp */,
+				60EC2F1F2585A90B001DA7C3 /* MPC.cpp */,
+				60EC2F202585A90B001DA7C3 /* MPC.hpp */,
+				60EC2F1C25854A99001DA7C3 /* pbPlots.cpp */,
+				60EC2F1925854A99001DA7C3 /* pbPlots.hpp */,
+				60EC2F1A25854A99001DA7C3 /* supportLib.cpp */,
+				60EC2F1B25854A99001DA7C3 /* supportLib.hpp */,
+			);
+			path = doubleIntegratorMPCclasses;
+			sourceTree = "<group>";
+		};
+		60EC2EF32584630E001DA7C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60EC2F0D258466C2001DA7C3 /* libmatplot.dylib */,
+				60EC2EFE25846322001DA7C3 /* libdmumps.dylib */,
+				60EC2EFB25846322001DA7C3 /* libipopt.3.dylib */,
+				60EC2EF925846322001DA7C3 /* libipoptamplinterface.3.dylib */,
+				60EC2EF825846322001DA7C3 /* libmpiseq.dylib */,
+				60EC2EFC25846322001DA7C3 /* libmumps_common.dylib */,
+				60EC2EFA25846322001DA7C3 /* libpord.dylib */,
+				60EC2EFD25846322001DA7C3 /* libsipopt.3.dylib */,
+				60EC2EF42584630E001DA7C3 /* libcppad_lib.340.3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60EC2ED6258461E3001DA7C3 /* doubleIntegratorMPCclasses */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60EC2EDE258461E3001DA7C3 /* Build configuration list for PBXNativeTarget "doubleIntegratorMPCclasses" */;
+			buildPhases = (
+				60EC2ED3258461E3001DA7C3 /* Sources */,
+				60EC2ED4258461E3001DA7C3 /* Frameworks */,
+				60EC2ED5258461E3001DA7C3 /* CopyFiles */,
+				60EC2EF72584630E001DA7C3 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = doubleIntegratorMPCclasses;
+			productName = doubIntegratator;
+			productReference = 60EC2ED7258461E3001DA7C3 /* doubleIntegratorMPCclasses */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60EC2ECF258461E3001DA7C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					60EC2ED6258461E3001DA7C3 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 60EC2ED2258461E3001DA7C3 /* Build configuration list for PBXProject "doubleIntegratorMPCclasses" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60EC2ECE258461E3001DA7C3;
+			productRefGroup = 60EC2ED8258461E3001DA7C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60EC2ED6258461E3001DA7C3 /* doubleIntegratorMPCclasses */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60EC2ED3258461E3001DA7C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60EC2F212585A90B001DA7C3 /* MPC.cpp in Sources */,
+				60EC2EE4258461F4001DA7C3 /* FG_eval.cpp in Sources */,
+				60EC2EDB258461E3001DA7C3 /* main.cpp in Sources */,
+				60EC2F1E25854A99001DA7C3 /* pbPlots.cpp in Sources */,
+				60EC2F1D25854A99001DA7C3 /* supportLib.cpp in Sources */,
+				60EC2F242585B7A1001DA7C3 /* Params.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		60EC2EDC258461E3001DA7C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		60EC2EDD258461E3001DA7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		60EC2EDF258461E3001DA7C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/eigen-3.3.9/Eigen",
+					/usr/local/Cellar/ipopt/3.13.3_2/include/,
+					/usr/local/Cellar/cppad/20200000.3/include/,
+					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/vcpkg/installed/x64-osx/include/",
+					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/pbPlots/Cpp/",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/cppad/20200000.3/lib,
+					/usr/local/Cellar/ipopt/3.13.3_2/lib,
+					/usr/local/Cellar/matplotplusplus/1.0.1/lib,
+					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/pbPlots/Cpp/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/pbPlots/Cpp/";
+			};
+			name = Debug;
+		};
+		60EC2EE0258461E3001DA7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/eigen-3.3.9/Eigen",
+					/usr/local/Cellar/ipopt/3.13.3_2/include/,
+					/usr/local/Cellar/cppad/20200000.3/include/,
+					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/vcpkg/installed/x64-osx/include/",
+					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/pbPlots/Cpp/",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/cppad/20200000.3/lib,
+					/usr/local/Cellar/ipopt/3.13.3_2/lib,
+					/usr/local/Cellar/matplotplusplus/1.0.1/lib,
+					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/pbPlots/Cpp/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/pbPlots/Cpp/";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60EC2ED2258461E3001DA7C3 /* Build configuration list for PBXProject "doubleIntegratorMPCclasses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60EC2EDC258461E3001DA7C3 /* Debug */,
+				60EC2EDD258461E3001DA7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60EC2EDE258461E3001DA7C3 /* Build configuration list for PBXNativeTarget "doubleIntegratorMPCclasses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60EC2EDF258461E3001DA7C3 /* Debug */,
+				60EC2EE0258461E3001DA7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60EC2ECF258461E3001DA7C3 /* Project object */;
+}

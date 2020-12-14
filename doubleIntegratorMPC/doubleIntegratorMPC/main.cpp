@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
     // Define random noise
     int seed = 0;
     std::default_random_engine generator (seed);
-    std::normal_distribution<double> normDist (0.0,0.2);
+    std::normal_distribution<double> normDist (0.0,0.01);
     Eigen::MatrixXd wNoise(2, p.Nsim);
     for(int k=0; k<p.Nsim; k++){wNoise(0,k) = normDist(generator); wNoise(1,k) = normDist(generator);}
     
@@ -81,7 +81,7 @@ int main(int argc, const char * argv[]) {
     
     // Plotting and saving
     RGBABitmapImageReference *imageRef = CreateRGBABitmapImageReference();
-    string imgLoc = "/Users/adbonzanini/Box Sync/Berkeley/Research/Cpp-MPC/doubleIntegratorMPC/doubleIntegratorMPC/";
+    string imgLoc = "/Users/adbonzanini/Box Sync/Berkeley/Research/Cpp-MPC/doubleIntegratorMPCclasses/doubleIntegratorMPCclasses";
     string imgTitle;
     std::vector<double> *pngData;
     
