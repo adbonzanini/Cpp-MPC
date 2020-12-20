@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6039529F258F779A0017E733 /* Tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6039529D258F779A0017E733 /* Tests.cpp */; };
 		60EC2EDB258461E3001DA7C3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2EDA258461E3001DA7C3 /* main.cpp */; };
-		60EC2EE4258461F4001DA7C3 /* FG_eval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2EE2258461F4001DA7C3 /* FG_eval.cpp */; };
 		60EC2EF52584630E001DA7C3 /* libcppad_lib.340.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EC2EF42584630E001DA7C3 /* libcppad_lib.340.3.dylib */; };
 		60EC2EF62584630E001DA7C3 /* libcppad_lib.340.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 60EC2EF42584630E001DA7C3 /* libcppad_lib.340.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		60EC2EFF25846322001DA7C3 /* libmpiseq.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EC2EF825846322001DA7C3 /* libmpiseq.dylib */; };
@@ -25,10 +25,6 @@
 		60EC2F0A25846322001DA7C3 /* libsipopt.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 60EC2EFD25846322001DA7C3 /* libsipopt.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		60EC2F0B25846322001DA7C3 /* libdmumps.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EC2EFE25846322001DA7C3 /* libdmumps.dylib */; };
 		60EC2F0C25846322001DA7C3 /* libdmumps.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 60EC2EFE25846322001DA7C3 /* libdmumps.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		60EC2F1D25854A99001DA7C3 /* supportLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2F1A25854A99001DA7C3 /* supportLib.cpp */; };
-		60EC2F1E25854A99001DA7C3 /* pbPlots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2F1C25854A99001DA7C3 /* pbPlots.cpp */; };
-		60EC2F212585A90B001DA7C3 /* MPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2F1F2585A90B001DA7C3 /* MPC.cpp */; };
-		60EC2F242585B7A1001DA7C3 /* Params.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2F222585B7A1001DA7C3 /* Params.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,10 +58,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		60EC2ED7258461E3001DA7C3 /* doubleIntegratorMPCclasses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = doubleIntegratorMPCclasses; sourceTree = BUILT_PRODUCTS_DIR; };
+		6039529D258F779A0017E733 /* Tests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tests.cpp; sourceTree = "<group>"; };
+		6039529E258F779A0017E733 /* Tests.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tests.hpp; sourceTree = "<group>"; };
+		60EC2ED7258461E3001DA7C3 /* unitTestingDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = unitTestingDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		60EC2EDA258461E3001DA7C3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		60EC2EE2258461F4001DA7C3 /* FG_eval.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FG_eval.cpp; sourceTree = "<group>"; };
-		60EC2EE3258461F4001DA7C3 /* FG_eval.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FG_eval.hpp; sourceTree = "<group>"; };
 		60EC2EF42584630E001DA7C3 /* libcppad_lib.340.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcppad_lib.340.3.dylib; path = ../../../../../../../usr/local/Cellar/cppad/20200000.3/lib/libcppad_lib.340.3.dylib; sourceTree = "<group>"; };
 		60EC2EF825846322001DA7C3 /* libmpiseq.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmpiseq.dylib; path = ../../../../../../../usr/local/Cellar/ipopt/3.13.3_2/lib/libmpiseq.dylib; sourceTree = "<group>"; };
 		60EC2EF925846322001DA7C3 /* libipoptamplinterface.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libipoptamplinterface.3.dylib; path = ../../../../../../../usr/local/Cellar/ipopt/3.13.3_2/lib/libipoptamplinterface.3.dylib; sourceTree = "<group>"; };
@@ -75,14 +71,6 @@
 		60EC2EFD25846322001DA7C3 /* libsipopt.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsipopt.3.dylib; path = ../../../../../../../usr/local/Cellar/ipopt/3.13.3_2/lib/libsipopt.3.dylib; sourceTree = "<group>"; };
 		60EC2EFE25846322001DA7C3 /* libdmumps.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdmumps.dylib; path = ../../../../../../../usr/local/Cellar/ipopt/3.13.3_2/lib/libdmumps.dylib; sourceTree = "<group>"; };
 		60EC2F0D258466C2001DA7C3 /* libmatplot.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmatplot.dylib; path = ../../../../../../../usr/local/Cellar/matplotplusplus/1.0.1/lib/libmatplot.dylib; sourceTree = "<group>"; };
-		60EC2F1925854A99001DA7C3 /* pbPlots.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = pbPlots.hpp; path = "../../Cpp-Libraries/pbPlots/Cpp/pbPlots.hpp"; sourceTree = "<group>"; };
-		60EC2F1A25854A99001DA7C3 /* supportLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = supportLib.cpp; path = "../../Cpp-Libraries/pbPlots/Cpp/supportLib.cpp"; sourceTree = "<group>"; };
-		60EC2F1B25854A99001DA7C3 /* supportLib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = supportLib.hpp; path = "../../Cpp-Libraries/pbPlots/Cpp/supportLib.hpp"; sourceTree = "<group>"; };
-		60EC2F1C25854A99001DA7C3 /* pbPlots.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pbPlots.cpp; path = "../../Cpp-Libraries/pbPlots/Cpp/pbPlots.cpp"; sourceTree = "<group>"; };
-		60EC2F1F2585A90B001DA7C3 /* MPC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MPC.cpp; sourceTree = "<group>"; };
-		60EC2F202585A90B001DA7C3 /* MPC.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MPC.hpp; sourceTree = "<group>"; };
-		60EC2F222585B7A1001DA7C3 /* Params.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Params.cpp; sourceTree = "<group>"; };
-		60EC2F232585B7A1001DA7C3 /* Params.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Params.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +95,7 @@
 		60EC2ECE258461E3001DA7C3 = {
 			isa = PBXGroup;
 			children = (
-				60EC2ED9258461E3001DA7C3 /* doubleIntegratorMPCclasses */,
+				60EC2ED9258461E3001DA7C3 /* unitTestingDemo */,
 				60EC2ED8258461E3001DA7C3 /* Products */,
 				60EC2EF32584630E001DA7C3 /* Frameworks */,
 			);
@@ -116,27 +104,19 @@
 		60EC2ED8258461E3001DA7C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				60EC2ED7258461E3001DA7C3 /* doubleIntegratorMPCclasses */,
+				60EC2ED7258461E3001DA7C3 /* unitTestingDemo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		60EC2ED9258461E3001DA7C3 /* doubleIntegratorMPCclasses */ = {
+		60EC2ED9258461E3001DA7C3 /* unitTestingDemo */ = {
 			isa = PBXGroup;
 			children = (
 				60EC2EDA258461E3001DA7C3 /* main.cpp */,
-				60EC2F222585B7A1001DA7C3 /* Params.cpp */,
-				60EC2F232585B7A1001DA7C3 /* Params.hpp */,
-				60EC2EE2258461F4001DA7C3 /* FG_eval.cpp */,
-				60EC2EE3258461F4001DA7C3 /* FG_eval.hpp */,
-				60EC2F1F2585A90B001DA7C3 /* MPC.cpp */,
-				60EC2F202585A90B001DA7C3 /* MPC.hpp */,
-				60EC2F1C25854A99001DA7C3 /* pbPlots.cpp */,
-				60EC2F1925854A99001DA7C3 /* pbPlots.hpp */,
-				60EC2F1A25854A99001DA7C3 /* supportLib.cpp */,
-				60EC2F1B25854A99001DA7C3 /* supportLib.hpp */,
+				6039529D258F779A0017E733 /* Tests.cpp */,
+				6039529E258F779A0017E733 /* Tests.hpp */,
 			);
-			path = doubleIntegratorMPCclasses;
+			path = unitTestingDemo;
 			sourceTree = "<group>";
 		};
 		60EC2EF32584630E001DA7C3 /* Frameworks */ = {
@@ -158,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		60EC2ED6258461E3001DA7C3 /* doubleIntegratorMPCclasses */ = {
+		60EC2ED6258461E3001DA7C3 /* unitTestingDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60EC2EDE258461E3001DA7C3 /* Build configuration list for PBXNativeTarget "doubleIntegratorMPCclasses" */;
+			buildConfigurationList = 60EC2EDE258461E3001DA7C3 /* Build configuration list for PBXNativeTarget "unitTestingDemo" */;
 			buildPhases = (
 				60EC2ED3258461E3001DA7C3 /* Sources */,
 				60EC2ED4258461E3001DA7C3 /* Frameworks */,
@@ -171,9 +151,9 @@
 			);
 			dependencies = (
 			);
-			name = doubleIntegratorMPCclasses;
+			name = unitTestingDemo;
 			productName = doubIntegratator;
-			productReference = 60EC2ED7258461E3001DA7C3 /* doubleIntegratorMPCclasses */;
+			productReference = 60EC2ED7258461E3001DA7C3 /* unitTestingDemo */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +169,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 60EC2ED2258461E3001DA7C3 /* Build configuration list for PBXProject "doubleIntegratorMPCclasses" */;
+			buildConfigurationList = 60EC2ED2258461E3001DA7C3 /* Build configuration list for PBXProject "unitTestingDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -202,7 +182,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				60EC2ED6258461E3001DA7C3 /* doubleIntegratorMPCclasses */,
+				60EC2ED6258461E3001DA7C3 /* unitTestingDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -212,12 +192,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60EC2F212585A90B001DA7C3 /* MPC.cpp in Sources */,
-				60EC2EE4258461F4001DA7C3 /* FG_eval.cpp in Sources */,
 				60EC2EDB258461E3001DA7C3 /* main.cpp in Sources */,
-				60EC2F1E25854A99001DA7C3 /* pbPlots.cpp in Sources */,
-				60EC2F1D25854A99001DA7C3 /* supportLib.cpp in Sources */,
-				60EC2F242585B7A1001DA7C3 /* Params.cpp in Sources */,
+				6039529F258F779A0017E733 /* Tests.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +323,7 @@
 					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/vcpkg/installed/x64-osx/include/",
 					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/pbPlots/Cpp/",
 					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/googletest/googletest/include",
+					/usr/local/Cellar/catch2/2.13.3/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -372,6 +349,7 @@
 					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/vcpkg/installed/x64-osx/include/",
 					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/pbPlots/Cpp/",
 					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/googletest/googletest/include",
+					/usr/local/Cellar/catch2/2.13.3/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -388,7 +366,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		60EC2ED2258461E3001DA7C3 /* Build configuration list for PBXProject "doubleIntegratorMPCclasses" */ = {
+		60EC2ED2258461E3001DA7C3 /* Build configuration list for PBXProject "unitTestingDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60EC2EDC258461E3001DA7C3 /* Debug */,
@@ -397,7 +375,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60EC2EDE258461E3001DA7C3 /* Build configuration list for PBXNativeTarget "doubleIntegratorMPCclasses" */ = {
+		60EC2EDE258461E3001DA7C3 /* Build configuration list for PBXNativeTarget "unitTestingDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60EC2EDF258461E3001DA7C3 /* Debug */,
