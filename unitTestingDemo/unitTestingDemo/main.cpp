@@ -11,10 +11,10 @@
 
 int main(){
     
-    std::cout << "This line gets executed before the tests" << std::endl;
-    
+    std::cout << "EXECUTE TESTS..." << std::endl;
     Catch::Session().run();
-    std::cout << "===============================================================================\n";
+    std::cout << "... DONE" << std::endl;
+
     
     return 0;
 }

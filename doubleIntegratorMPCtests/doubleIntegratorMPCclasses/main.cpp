@@ -5,6 +5,7 @@
 //  Created by Angelo Bonzanini on 12/11/20.
 //
 
+#define CATCH_CONFIG_RUNNER
 #include <iostream>
 #include <math.h>
 #include <chrono>
@@ -12,6 +13,7 @@
 #include "pbPlots.hpp"
 #include "supportLib.hpp"
 #include "MPC.hpp"
+#include "Tests.hpp"
 
 
 int main(int argc, const char * argv[]) {
@@ -88,6 +90,10 @@ int main(int argc, const char * argv[]) {
     duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
     std::cout << "Time for plot and save  = " << duration.count() << " ms"  << std::endl;
 
+    
+    std::cout << "\n=================\nEXECUTE TESTS..." << std::endl;
+    Catch::Session().run();
+    std::cout << "... DONE\n========\n" << std::endl;
 
     return 0;
 }

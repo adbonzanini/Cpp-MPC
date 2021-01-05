@@ -345,6 +345,7 @@
 					/usr/local/Cellar/ipopt/3.13.3_2/include/,
 					/usr/local/Cellar/cppad/20200000.3/include/,
 					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/pbPlots/Cpp/",
+					/usr/local/Cellar/catch2/2.13.3/include/,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -368,6 +369,7 @@
 					/usr/local/Cellar/ipopt/3.13.3_2/include/,
 					/usr/local/Cellar/cppad/20200000.3/include/,
 					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/pbPlots/Cpp/",
+					/usr/local/Cellar/catch2/2.13.3/include/,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
