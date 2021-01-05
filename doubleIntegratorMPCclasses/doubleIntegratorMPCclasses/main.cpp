@@ -59,8 +59,8 @@ int main(int argc, const char * argv[]) {
     
     // Plotting and saving
     RGBABitmapImageReference *imageRef = CreateRGBABitmapImageReference();
-    string imgLoc = "/Users/adbonzanini/Box Sync/Berkeley/Research/Cpp-MPC/doubleIntegratorMPCclasses/doubleIntegratorMPCclasses/";
-    string imgTitle;
+    std::string imgLoc = "/Users/adbonzanini/Box Sync/Berkeley/Research/Cpp-MPC/doubleIntegratorMPCclasses/doubleIntegratorMPCclasses/";
+    std::string imgTitle;
     std::vector<double> *pngData;
     
     // Plot 1

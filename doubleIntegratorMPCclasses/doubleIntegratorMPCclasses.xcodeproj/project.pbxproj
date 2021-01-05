@@ -341,7 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
-					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/eigen-3.3.9/Eigen",
+					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/eigen-3.3.9/Eigen/",
 					/usr/local/Cellar/ipopt/3.13.3_2/include/,
 					/usr/local/Cellar/cppad/20200000.3/include/,
 					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/vcpkg/installed/x64-osx/include/",
@@ -366,7 +366,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
-					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/eigen-3.3.9/Eigen",
+					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/eigen-3.3.9/Eigen/",
 					/usr/local/Cellar/ipopt/3.13.3_2/include/,
 					/usr/local/Cellar/cppad/20200000.3/include/,
 					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/vcpkg/installed/x64-osx/include/",
