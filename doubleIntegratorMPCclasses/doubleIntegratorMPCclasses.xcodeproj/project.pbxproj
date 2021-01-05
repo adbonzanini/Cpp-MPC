@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60DC661325A4EC4C00678ED4 /* pbPlots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DC661025A4EC4C00678ED4 /* pbPlots.cpp */; };
+		60DC661425A4EC4C00678ED4 /* supportLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DC661125A4EC4C00678ED4 /* supportLib.cpp */; };
 		60EC2EDB258461E3001DA7C3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2EDA258461E3001DA7C3 /* main.cpp */; };
 		60EC2EE4258461F4001DA7C3 /* FG_eval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2EE2258461F4001DA7C3 /* FG_eval.cpp */; };
 		60EC2EF52584630E001DA7C3 /* libcppad_lib.340.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EC2EF42584630E001DA7C3 /* libcppad_lib.340.3.dylib */; };
@@ -25,8 +27,6 @@
 		60EC2F0A25846322001DA7C3 /* libsipopt.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 60EC2EFD25846322001DA7C3 /* libsipopt.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		60EC2F0B25846322001DA7C3 /* libdmumps.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EC2EFE25846322001DA7C3 /* libdmumps.dylib */; };
 		60EC2F0C25846322001DA7C3 /* libdmumps.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 60EC2EFE25846322001DA7C3 /* libdmumps.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		60EC2F1D25854A99001DA7C3 /* supportLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2F1A25854A99001DA7C3 /* supportLib.cpp */; };
-		60EC2F1E25854A99001DA7C3 /* pbPlots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2F1C25854A99001DA7C3 /* pbPlots.cpp */; };
 		60EC2F212585A90B001DA7C3 /* MPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2F1F2585A90B001DA7C3 /* MPC.cpp */; };
 		60EC2F242585B7A1001DA7C3 /* Params.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EC2F222585B7A1001DA7C3 /* Params.cpp */; };
 /* End PBXBuildFile section */
@@ -62,6 +62,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		60DC660F25A4EC4C00678ED4 /* pbPlots.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = pbPlots.hpp; path = "../../Cpp-Libraries/pbPlots/Cpp/pbPlots.hpp"; sourceTree = "<group>"; };
+		60DC661025A4EC4C00678ED4 /* pbPlots.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pbPlots.cpp; path = "../../Cpp-Libraries/pbPlots/Cpp/pbPlots.cpp"; sourceTree = "<group>"; };
+		60DC661125A4EC4C00678ED4 /* supportLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = supportLib.cpp; path = "../../Cpp-Libraries/pbPlots/Cpp/supportLib.cpp"; sourceTree = "<group>"; };
+		60DC661225A4EC4C00678ED4 /* supportLib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = supportLib.hpp; path = "../../Cpp-Libraries/pbPlots/Cpp/supportLib.hpp"; sourceTree = "<group>"; };
 		60EC2ED7258461E3001DA7C3 /* doubleIntegratorMPCclasses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = doubleIntegratorMPCclasses; sourceTree = BUILT_PRODUCTS_DIR; };
 		60EC2EDA258461E3001DA7C3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		60EC2EE2258461F4001DA7C3 /* FG_eval.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FG_eval.cpp; sourceTree = "<group>"; };
@@ -75,10 +79,6 @@
 		60EC2EFD25846322001DA7C3 /* libsipopt.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsipopt.3.dylib; path = ../../../../../../../usr/local/Cellar/ipopt/3.13.3_2/lib/libsipopt.3.dylib; sourceTree = "<group>"; };
 		60EC2EFE25846322001DA7C3 /* libdmumps.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdmumps.dylib; path = ../../../../../../../usr/local/Cellar/ipopt/3.13.3_2/lib/libdmumps.dylib; sourceTree = "<group>"; };
 		60EC2F0D258466C2001DA7C3 /* libmatplot.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmatplot.dylib; path = ../../../../../../../usr/local/Cellar/matplotplusplus/1.0.1/lib/libmatplot.dylib; sourceTree = "<group>"; };
-		60EC2F1925854A99001DA7C3 /* pbPlots.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = pbPlots.hpp; path = "../../Cpp-Libraries/pbPlots/Cpp/pbPlots.hpp"; sourceTree = "<group>"; };
-		60EC2F1A25854A99001DA7C3 /* supportLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = supportLib.cpp; path = "../../Cpp-Libraries/pbPlots/Cpp/supportLib.cpp"; sourceTree = "<group>"; };
-		60EC2F1B25854A99001DA7C3 /* supportLib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = supportLib.hpp; path = "../../Cpp-Libraries/pbPlots/Cpp/supportLib.hpp"; sourceTree = "<group>"; };
-		60EC2F1C25854A99001DA7C3 /* pbPlots.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pbPlots.cpp; path = "../../Cpp-Libraries/pbPlots/Cpp/pbPlots.cpp"; sourceTree = "<group>"; };
 		60EC2F1F2585A90B001DA7C3 /* MPC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MPC.cpp; sourceTree = "<group>"; };
 		60EC2F202585A90B001DA7C3 /* MPC.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MPC.hpp; sourceTree = "<group>"; };
 		60EC2F222585B7A1001DA7C3 /* Params.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Params.cpp; sourceTree = "<group>"; };
@@ -131,10 +131,10 @@
 				60EC2EE3258461F4001DA7C3 /* FG_eval.hpp */,
 				60EC2F1F2585A90B001DA7C3 /* MPC.cpp */,
 				60EC2F202585A90B001DA7C3 /* MPC.hpp */,
-				60EC2F1C25854A99001DA7C3 /* pbPlots.cpp */,
-				60EC2F1925854A99001DA7C3 /* pbPlots.hpp */,
-				60EC2F1A25854A99001DA7C3 /* supportLib.cpp */,
-				60EC2F1B25854A99001DA7C3 /* supportLib.hpp */,
+				60DC661025A4EC4C00678ED4 /* pbPlots.cpp */,
+				60DC660F25A4EC4C00678ED4 /* pbPlots.hpp */,
+				60DC661125A4EC4C00678ED4 /* supportLib.cpp */,
+				60DC661225A4EC4C00678ED4 /* supportLib.hpp */,
 			);
 			path = doubleIntegratorMPCclasses;
 			sourceTree = "<group>";
@@ -215,9 +215,9 @@
 				60EC2F212585A90B001DA7C3 /* MPC.cpp in Sources */,
 				60EC2EE4258461F4001DA7C3 /* FG_eval.cpp in Sources */,
 				60EC2EDB258461E3001DA7C3 /* main.cpp in Sources */,
-				60EC2F1E25854A99001DA7C3 /* pbPlots.cpp in Sources */,
-				60EC2F1D25854A99001DA7C3 /* supportLib.cpp in Sources */,
+				60DC661425A4EC4C00678ED4 /* supportLib.cpp in Sources */,
 				60EC2F242585B7A1001DA7C3 /* Params.cpp in Sources */,
+				60DC661325A4EC4C00678ED4 /* pbPlots.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,9 +344,7 @@
 					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/eigen-3.3.9/Eigen/",
 					/usr/local/Cellar/ipopt/3.13.3_2/include/,
 					/usr/local/Cellar/cppad/20200000.3/include/,
-					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/vcpkg/installed/x64-osx/include/",
 					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/pbPlots/Cpp/",
-					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/googletest/googletest/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -369,9 +367,7 @@
 					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/eigen-3.3.9/Eigen/",
 					/usr/local/Cellar/ipopt/3.13.3_2/include/,
 					/usr/local/Cellar/cppad/20200000.3/include/,
-					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/vcpkg/installed/x64-osx/include/",
 					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/pbPlots/Cpp/",
-					"/Users/adbonzanini/Box\\ Sync/Berkeley/Research/Cpp-MPC/Cpp-Libraries/googletest/googletest/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
