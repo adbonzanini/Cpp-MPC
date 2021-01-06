@@ -7,11 +7,40 @@
 
 #include "Tests.hpp"
 
+// Function that solves the MPC problem
+MPC::ReturnTraj solveMPC(Params p, Eigen::Vector2d x0){
+    
+    // Create optimal control problem through the MPC class
+    MPC mpc;
+    MPC::ReturnProb ocp = mpc.ocpBuild(p);
+    
+    // Solve the MPC
+    MPC::ReturnTraj tr = mpc.mpcSolve(p, ocp, x0);
+    
+    return tr;
+}
+
+
 
 // Ensure that the trajectories converge in a neigborhood around the origin
-//TEST_CASE("Convergence"){
-//    REQUIRE(x)
-//}
+TEST_CASE("Convergence"){
+    
+    // Define parameters and initial conditions
+    Params p;
+    Eigen::VectorXd x0(p.nx); x0(0) = 4; x0(1) = 5;
+    // Solve MPC
+    MPC::ReturnTraj tr = solveMPC(p,x0);
+    
+    double tol = 0.01;
+
+    std::vector<double> x1end = std::vector<double>(tr.x1Path.begin()+p.Nsim-1-5, tr.x1Path.end());
+    std::vector<double> x1Tol(x1end.size(), tol);
+    std::vector<double> mx1Tol(x1end.size(), -tol);
+    
+    REQUIRE(x1end <= x1Tol);
+    REQUIRE(x1end>=mx1Tol);
+
+}
 
 
 //EXAMPLES OF TEST CASES

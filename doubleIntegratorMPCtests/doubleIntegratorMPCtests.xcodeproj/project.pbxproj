@@ -69,7 +69,7 @@
 		60DC661225A4EC4C00678ED4 /* supportLib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = supportLib.hpp; path = "../../Cpp-Libraries/pbPlots/Cpp/supportLib.hpp"; sourceTree = "<group>"; };
 		60DC661525A4ED1100678ED4 /* Tests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tests.cpp; sourceTree = "<group>"; };
 		60DC661625A4ED1100678ED4 /* Tests.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tests.hpp; sourceTree = "<group>"; };
-		60EC2ED7258461E3001DA7C3 /* doubleIntegratorMPCclasses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = doubleIntegratorMPCclasses; sourceTree = BUILT_PRODUCTS_DIR; };
+		60EC2ED7258461E3001DA7C3 /* doubleIntegratorMPCtests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = doubleIntegratorMPCtests; sourceTree = BUILT_PRODUCTS_DIR; };
 		60EC2EDA258461E3001DA7C3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		60EC2EE2258461F4001DA7C3 /* FG_eval.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FG_eval.cpp; sourceTree = "<group>"; };
 		60EC2EE3258461F4001DA7C3 /* FG_eval.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FG_eval.hpp; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		60EC2ECE258461E3001DA7C3 = {
 			isa = PBXGroup;
 			children = (
-				60EC2ED9258461E3001DA7C3 /* doubleIntegratorMPCclasses */,
+				60EC2ED9258461E3001DA7C3 /* doubleIntegratorMPCtests */,
 				60EC2ED8258461E3001DA7C3 /* Products */,
 				60EC2EF32584630E001DA7C3 /* Frameworks */,
 			);
@@ -119,12 +119,12 @@
 		60EC2ED8258461E3001DA7C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				60EC2ED7258461E3001DA7C3 /* doubleIntegratorMPCclasses */,
+				60EC2ED7258461E3001DA7C3 /* doubleIntegratorMPCtests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		60EC2ED9258461E3001DA7C3 /* doubleIntegratorMPCclasses */ = {
+		60EC2ED9258461E3001DA7C3 /* doubleIntegratorMPCtests */ = {
 			isa = PBXGroup;
 			children = (
 				60EC2EDA258461E3001DA7C3 /* main.cpp */,
@@ -141,7 +141,7 @@
 				60DC661125A4EC4C00678ED4 /* supportLib.cpp */,
 				60DC661225A4EC4C00678ED4 /* supportLib.hpp */,
 			);
-			path = doubleIntegratorMPCclasses;
+			path = doubleIntegratorMPCtests;
 			sourceTree = "<group>";
 		};
 		60EC2EF32584630E001DA7C3 /* Frameworks */ = {
@@ -163,9 +163,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		60EC2ED6258461E3001DA7C3 /* doubleIntegratorMPCclasses */ = {
+		60EC2ED6258461E3001DA7C3 /* doubleIntegratorMPCtests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60EC2EDE258461E3001DA7C3 /* Build configuration list for PBXNativeTarget "doubleIntegratorMPCclasses" */;
+			buildConfigurationList = 60EC2EDE258461E3001DA7C3 /* Build configuration list for PBXNativeTarget "doubleIntegratorMPCtests" */;
 			buildPhases = (
 				60EC2ED3258461E3001DA7C3 /* Sources */,
 				60EC2ED4258461E3001DA7C3 /* Frameworks */,
@@ -176,9 +176,9 @@
 			);
 			dependencies = (
 			);
-			name = doubleIntegratorMPCclasses;
+			name = doubleIntegratorMPCtests;
 			productName = doubIntegratator;
-			productReference = 60EC2ED7258461E3001DA7C3 /* doubleIntegratorMPCclasses */;
+			productReference = 60EC2ED7258461E3001DA7C3 /* doubleIntegratorMPCtests */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -194,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 60EC2ED2258461E3001DA7C3 /* Build configuration list for PBXProject "doubleIntegratorMPCclasses" */;
+			buildConfigurationList = 60EC2ED2258461E3001DA7C3 /* Build configuration list for PBXProject "doubleIntegratorMPCtests" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -207,7 +207,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				60EC2ED6258461E3001DA7C3 /* doubleIntegratorMPCclasses */,
+				60EC2ED6258461E3001DA7C3 /* doubleIntegratorMPCtests */,
 			);
 		};
 /* End PBXProject section */
@@ -392,7 +392,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		60EC2ED2258461E3001DA7C3 /* Build configuration list for PBXProject "doubleIntegratorMPCclasses" */ = {
+		60EC2ED2258461E3001DA7C3 /* Build configuration list for PBXProject "doubleIntegratorMPCtests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60EC2EDC258461E3001DA7C3 /* Debug */,
@@ -401,7 +401,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60EC2EDE258461E3001DA7C3 /* Build configuration list for PBXNativeTarget "doubleIntegratorMPCclasses" */ = {
+		60EC2EDE258461E3001DA7C3 /* Build configuration list for PBXNativeTarget "doubleIntegratorMPCtests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60EC2EDF258461E3001DA7C3 /* Debug */,

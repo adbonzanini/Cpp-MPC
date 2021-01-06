@@ -13,6 +13,7 @@
 #include <cppad/ipopt/solve.hpp>
 #include <Eigen>
 #include <random>
+#include <cmath>
 using namespace CppAD;
 
 struct Params{

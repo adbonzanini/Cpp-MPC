@@ -12,26 +12,25 @@
 #include <random>
 #include "pbPlots.hpp"
 #include "supportLib.hpp"
-#include "MPC.hpp"
 #include "Tests.hpp"
 
 
+
 int main(int argc, const char * argv[]) {
+    
     
     // Create Parameters object and define initial state
     Params p;
     Eigen::VectorXd x0(p.nx); x0(0) = 4; x0(1) = 5;
     
-    // Create optimal control problem through the MPC class
-    MPC mpc;
-    MPC::ReturnProb ocp = mpc.ocpBuild(p);
-    
-    // Solve the MPC (and time it)
     auto start = std::chrono::high_resolution_clock::now();
-    MPC::ReturnTraj tr = mpc.mpcSolve(p, ocp, x0);
-    
+    MPC::ReturnTraj tr = solveMPC(p,x0);
     auto stop = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
+    
+    
+    
+    
     
     
     
@@ -91,9 +90,23 @@ int main(int argc, const char * argv[]) {
     std::cout << "Time for plot and save  = " << duration.count() << " ms"  << std::endl;
 
     
-    std::cout << "\n=================\nEXECUTE TESTS..." << std::endl;
+    
+    
+    // ############ RUN TESTS ############
+    std::cout << "\nEXECUTING TESTS..." << std::endl;
     Catch::Session().run();
-    std::cout << "... DONE\n========\n" << std::endl;
+    std::cout << "... DONE\n" << std::endl;
+    
+    
+    // For reference
+    /*
+    // Indexing
+    std::cout << tr.x1Path[tr.x1Path.size()-1] << std::endl;
+    
+    // Slicing
+    std::vector<double> v2 = std::vector<double> (tr.x1Path.begin()+15, tr.x1Path.end());
+    std::cout << v2[0] << std::endl;
+     */
 
     return 0;
 }
