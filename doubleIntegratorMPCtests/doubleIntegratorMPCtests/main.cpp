@@ -107,6 +107,8 @@ int main(int argc, const char * argv[]) {
     std::vector<double> v2 = std::vector<double> (tr.x1Path.begin()+15, tr.x1Path.end());
     std::cout << v2[0] << std::endl;
      */
+    
+    
 
     return 0;
 }

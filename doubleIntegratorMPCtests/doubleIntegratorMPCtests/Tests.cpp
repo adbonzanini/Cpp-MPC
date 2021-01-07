@@ -7,6 +7,10 @@
 
 #include "Tests.hpp"
 
+//***********
+// FUNCTIONS
+//***********
+
 // Function that solves the MPC problem
 MPC::ReturnTraj solveMPC(Params p, Eigen::Vector2d x0){
     
@@ -20,25 +24,52 @@ MPC::ReturnTraj solveMPC(Params p, Eigen::Vector2d x0){
     return tr;
 }
 
+// Function that returns the last nElements of a trajectory vector
+std::vector<double> getLastElements(std::vector<double> vec, Params p, int nElements){
+    
+    std::vector<double> returnVec = std::vector<double>(vec.begin()+p.Nsim-1-nElements, vec.end());
+    
+    return returnVec;
+}
 
+
+//***********
+// TESTS
+//***********
 
 // Ensure that the trajectories converge in a neigborhood around the origin
-TEST_CASE("Convergence"){
+TEST_CASE("Convergence to Setpoint"){
+    
+    // Define constants
+    const double SETPOINT = 0;      // Setpoint around which the trajectories should converge
+    const double TOL = 0.1;         // Tolerance for approximate equality due to noise
+    const int NSTARTINGPOINTS = 1;  // How many starting points (for each state) to test randomly
+    srand (1);                      // Seed
     
     // Define parameters and initial conditions
     Params p;
-    Eigen::VectorXd x0(p.nx); x0(0) = 4; x0(1) = 5;
+    Eigen::VectorXd x0(p.nx);
+    x0(0) = GENERATE(take(NSTARTINGPOINTS, random(-10, 10)));
+    x0(1) = GENERATE(take(NSTARTINGPOINTS, random(-10, 10)));
     // Solve MPC
     MPC::ReturnTraj tr = solveMPC(p,x0);
     
-    double tol = 0.01;
-
-    std::vector<double> x1end = std::vector<double>(tr.x1Path.begin()+p.Nsim-1-5, tr.x1Path.end());
-    std::vector<double> x1Tol(x1end.size(), tol);
-    std::vector<double> mx1Tol(x1end.size(), -tol);
+    // Obtain the last n elements of the trajectories
+    std::vector<double> x1end = getLastElements(tr.x1Path, p, 5);
+    std::vector<double> x2end = getLastElements(tr.x2Path, p, 5);
+    std::vector<double> u1end = getLastElements(tr.u1Path, p, 5);
     
-    REQUIRE(x1end <= x1Tol);
-    REQUIRE(x1end>=mx1Tol);
+    // Define the expected values
+    std::vector<double> x1Expect(x1end.size(), SETPOINT);
+    std::vector<double> x2Expect(x2end.size(), SETPOINT);
+    std::vector<double> u1Expect(u1end.size(), SETPOINT);
+    
+    // Check approximate equality (due to noise)
+    // Use REQUIRE_THAT macro to use matchers (used for more complex comparisons)
+    REQUIRE_THAT(x1end, Catch::Approx(x1Expect).margin(TOL));
+    REQUIRE_THAT(x2end, Catch::Approx(x2Expect).margin(TOL));
+    REQUIRE_THAT(u1end, Catch::Approx(u1Expect).margin(TOL));
+    
 
 }
 
