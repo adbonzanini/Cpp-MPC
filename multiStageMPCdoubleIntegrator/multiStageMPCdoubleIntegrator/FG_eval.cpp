@@ -8,6 +8,10 @@
 #include "FG_eval.hpp"
 
 
+
+// Define a matrix multiplication function to inteface Eigen with CppAD
+
+
 void FG_eval::operator()(ADvector & fg, const ADvector & vars){
     Params p;
     size_t j;
@@ -58,20 +62,34 @@ void FG_eval::operator()(ADvector & fg, const ADvector & vars){
     
     // Addiional constraints (non-anticipativity)
     if(p.ng>0){
+        
+
+        for(int i = 0; i < p.ng; i++){
+           
+            auto Erow = p.Emat.block(i, 0, 1, p.Ecols);
+            AD<double> sum = 0;
+            for(int j = 0; j < Erow.cols(); j++){
+                sum = sum + p.Emat(i,j)*vars[p.u1Start+j];
+            }
+            fg[1+p.u1Start+i] = sum;
+        }
+
+        /*
         j = 0; int s1 = 1; int s2 = 2;
         fg[1+0+p.u1Start] = vars[p.u1Start+j+s1-1]-vars[p.u1Start+j+p.N*(s2-1)];
-        
+
         j = 1; s1 = 1; s2 = 2;
         fg[1+1+p.u1Start] = vars[p.u1Start+j+s1-1]-vars[p.u1Start+j+p.N*(s2-1)];
-        
+
         j = 0; s1 = 2; s2 = 3;
         fg[1+2+p.u1Start] = vars[p.u1Start+j+s1-1]-vars[p.u1Start+j+p.N*(s2-1)];
-        
+
         j = 0; s1 = 3; s2 = 4;
         fg[1+3+p.u1Start] = vars[p.u1Start+j+s1-1]-vars[p.u1Start+j+p.N*(s2-1)];
-        
+
         j = 1; s1 = 3; s2 = 4;
         fg[1+4+p.u1Start] = vars[p.u1Start+j+s1-1]-vars[p.u1Start+j+s2-1];
+         */
     }
     std::cout<< fg.size() << std::endl;
     

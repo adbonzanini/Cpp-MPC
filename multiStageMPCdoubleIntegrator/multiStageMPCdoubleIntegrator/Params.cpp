@@ -18,7 +18,7 @@ Params::Params(){
     Breal = B;
     
     // Initialize cost matrices
-    Q = Eigen::MatrixXd::Identity(2,2);
+    Q = Eigen::MatrixXd::Identity(2,2); Q(1,1) = 0.1;
     R = 0.1;
     
     // Initialize noise

@@ -123,6 +123,9 @@ MPC::ReturnTraj MPC::mpcSolve(Params p, ReturnProb problem, Eigen::VectorXd x0){
         uOpt = sol.x[p.u1Start];
         u1Path[k] = uOpt;
         
+        // Save predicted states and inputs
+        // TO DO
+        
         // Apply optimal input to the system
         x0 = p.A*x0 + p.B*uOpt+ (p.wNoise).col(k);
         x1Path[k+1] = x0[0]; x2Path[k+1] = x0[1];

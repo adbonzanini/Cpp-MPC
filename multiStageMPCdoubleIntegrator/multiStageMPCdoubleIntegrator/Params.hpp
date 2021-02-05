@@ -22,7 +22,6 @@ public:
     size_t nx = 2;
     const static size_t ny = 2;
     const static size_t nu = 1;
-    const static size_t ng = 5;
     
     // Prediction horizon
     const static size_t N = 5;
@@ -35,6 +34,8 @@ public:
     const static int Nrobust = 2;                // Robust horizon
     const static int Nsc = Nrobust*NscNode;      // Total number of scenarios
     const static int sumCommonNodes = 2+1+2;
+    
+    const static size_t ng = sumCommonNodes;
     
     // Total number of variables
     size_t nVars = ((N+1)*nx+N*nu)*Nsc;
